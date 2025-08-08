@@ -1,0 +1,176 @@
+/* ESTILOS GERAIS */
+body {
+    margin: 0;
+    background-color: #DEFF92;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #DEFF92;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 2px solid #362DB4;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-button {
+    color: #362DB4;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-button:hover {
+    color: #2a237d;
+}
+
+/* User section abaixo da linha azul */
+.user-section {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.user-photo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #362DB4;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-name {
+    font-weight: 700;
+    color: #362DB4;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.user-email {
+    font-size: 14px;
+    color: #362DB4;
+    margin-bottom: 10px;
+}
+
+.user-button {
+    background: white;
+    border: 2px solid #362DB4;
+    border-radius: 8px;
+    padding: 8px 15px;
+    color: #362DB4;
+    font-weight: 500;
+    cursor: pointer;
+    width: 180px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.user-button:hover {
+    background: #362DB4;
+    color: white;
+}
+
+.logout-button {
+    color: #ff4d4d;
+    border-color: #ff4d4d;
+}
+
+.logout-button:hover {
+    background: #ff4d4d;
+    color: white;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .navbar-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .user-section {
+        align-items: center;
+    }
+    .user-info {
+        text-align: center;
+    }
+}
+
+/* SEÇÃO DE BUSCA */
+.search-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search-bar {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #362DB4;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* FILTROS */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-group select,
+.filter-button {
+    padding: 10px 15px;
+    border: 2px solid #362DB4;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    color: #362DB4;
+    cursor: pointer;
+    min-width: 180px;
+    box-sizing: border-box;
+}
+
+.filter-button {
+    background-color: #362DB4;
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #2a237d;
+}
