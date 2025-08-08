@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DoeLivros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-top">
+            <img src="assets/images/logo.svg.png" alt="DoeLivros" class="logo" />
+            <div class="nav-buttons">
+                <a href="#" class="nav-button">INÍCIO</a>
+                <a href="#" class="nav-button">FAÇA UMA DOAÇÃO</a>
+                <a href="#" class="nav-button">SOBRE O PROJETO</a>
+                <a href="#" class="nav-button">FALE CONOSCO</a>
+                <a href="#" class="nav-button">PARCEIROS</a>
+            </div>
+        </div>
+
+        <div class="user-section">
+            <img src="assets/images/foto-perfil.jpg" alt="Foto de Perfil" class="user-photo" />
+            <div class="user-info">
+                <div class="user-name">Gabriel Strapazzon Grazioli</div>
+                <div class="user-email">gabrielgrazioli@hotmail.com</div>
+            </div>
+
+            <button class="user-button">MINHA CONTA</button>
+            <button class="user-button">MINHAS DOAÇÕES</button>
+            <button class="user-button">CENTRAL DE AJUDA</button>
+            <button class="user-button logout-button">SAIR</button>
+        </div>
+    </nav>
+
+    <div class="search-section">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar por título, autor, cidade..." />
+        </div>
+        <div class="filters">
+            <div class="filter-group">
+                <select id="genre">
+                    <option value="" disabled selected>Gênero</option>
+                    <option value="literatura">Literatura</option>
+                    <option value="ficcao">Ficção</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="state">
+                    <option value="" disabled selected>Estado do livro</option>
+                    <option value="novo">Novo (nunca usado)</option>
+                </select>
+            </div>
+            <button class="filter-button">Filtrar</button>
+        </div>
+    </div>
+</body>
+</html>
