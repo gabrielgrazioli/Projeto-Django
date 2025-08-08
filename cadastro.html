@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoeLivros - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #DEFF92;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box {
+            width: 350px;
+            text-align: center;
+            padding: 40px;
+            margin-top: -30px;
+        }
+        .logo {
+            width: 250px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #362DB4;
+            margin: 0;
+            line-height: 1;
+        }
+        .subtitle {
+            margin-top: 2px;
+            margin-bottom: 20px;
+            color: #362DB4;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #362DB4;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dfdfdf;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin: 10px 0 15px;
+            color: #362DB4;
+            font-weight: 500;
+        }
+        .login-button {
+            background-color: #362DB4;
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+        .login-button:hover {
+            background-color: #2a248f;
+        }
+        .register-text {
+            color: #362DB4;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img src="/assets/images/logo.svg.png" alt="DoeLivros" class="logo">
+        <p class="subtitle">Cadastre-se</p>
+
+        <div class="input-group">
+            <label>E-MAIL</label>
+            <input type="email" placeholder="exemplo@email.com">
+        </div>
+
+        <div class="input-group">
+            <label> INSIRA SUA SENHA</label>
+            <input type="email" placeholder="••••••••">
+        </div>
+
+        <div class="input-group">
+            <label>CONFIRME SUA SENHA</label>
+            <input type="password" placeholder="••••••••">
+        </div>
+
+        <button class="login-button">CADASTRAR-SE</button>
+
+        <p class="register-text">
+            Já possui uma conta? <a href="#" class="register-link">Login</a>
+        </p>
+    </div>
+</body>
+</html>
