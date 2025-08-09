@@ -12,25 +12,25 @@
 </head>
 <body>
     <div class="home-container">
-<header class="main-header">
-    <div class="header-left">
-        <div class="logo-container">
-            <img src="assets/images/logo.svg.png" alt="Logo DoeLivros" class="logo-img">
-            <h1 class="logo-text"></h1>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">FAÇA UMA DOAÇÃO</a></li>
-                <li><a href="#">SOBRE O PROJETO</a></li>
-                <li><a href="#">FALE CONOSCO</a></li>
-                <li><a href="#">PARCEIROS</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header-right">
-        </div>
-</header>
+        <header class="main-header">
+            <div class="header-left">
+                <div class="logo-container">
+                    <img src="assets/images/logo.svg.png" alt="Logo DoeLivros" class="logo-img">
+                    <h1 class="logo-text"></h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">FAÇA UMA DOAÇÃO</a></li>
+                        <li><a href="#">SOBRE O PROJETO</a></li>
+                        <li><a href="#">FALE CONOSCO</a></li>
+                        <li><a href="#">PARCEIROS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+            </div>
+        </header>
 
         <main class="main-content">
             <section class="search-and-filters">
@@ -181,7 +181,7 @@
                         <div class="book-cover">
                             <h3 class="book-title">Dom Quixote</h3>
                             <p class="book-author">Autor: Miguel de Cervantes</p>
-                            <p class="book-state"Estado: Usado - Bom</p>
+                            <p class="book-state">Estado: Usado - Bom</p>
                         </div>
                     </div>
                 </a>
@@ -216,8 +216,19 @@
             <button class="sidebar-button">MINHAS DOAÇÕES</button>
             <button class="sidebar-button">MEUS FAVORITOS</button>
             <button class="sidebar-button">CENTRAL DE AJUDA</button>
-            <button class="sidebar-logout-button">SAIR</button>
+            <button class="sidebar-logout-button" id="btnSair" type="button">SAIR</button>
         </aside>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var btnSair = document.getElementById('btnSair');
+            if (btnSair) {
+                btnSair.addEventListener('click', function (e) {
+                    window.location.href = 'login.html';
+                });
+            }
+        });
+    </script>
 </body>
 </html>
