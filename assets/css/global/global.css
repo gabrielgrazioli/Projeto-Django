@@ -1,6 +1,7 @@
 body {
+    background-color: #DEFF92;
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: var(--fundo-principal);
+    color: #333;
     margin: 0;
     padding: 0;
 }
