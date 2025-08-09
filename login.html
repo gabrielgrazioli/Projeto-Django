@@ -112,11 +112,13 @@
             Não possui uma conta? <a href="#" class="register-link" id="registerLink">Registre-se</a>
         </p>
     </div>
+
     <script>
         document.getElementById('registerLink').addEventListener('click', function(e) {
-            e.preventDefault(); 
+            e.preventDefault();
             window.location.href = 'cadastro.html';
         });
+
         document.querySelector('.login-button').addEventListener('click', function() {
             alert('Funcionalidade de login será implementada aqui!');
         });
