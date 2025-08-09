@@ -1,0 +1,31 @@
+.sobre-section {
+    background-color: #DEFF92;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.sobre-title {
+    color: #362db4 !important;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sobre-text {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 90px !important;
+}
+.sobre-section p.sobre-text {
+    margin-bottom: 30px !important;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+}
+
+.sobre-section p.sobre-text:last-child {
+    margin-bottom: 0 !important;
+}
