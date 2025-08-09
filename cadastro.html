@@ -72,6 +72,14 @@
             color: #362DB4;
             font-size: 15px;
         }
+        .register-link {
+            color: #362DB4;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .register-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +93,7 @@
         </div>
 
         <div class="input-group">
-            <label> INSIRA SUA SENHA</label>
+            <label>INSIRA SUA SENHA</label>
             <input type="password" placeholder="••••••••">
         </div>
 
@@ -97,8 +105,18 @@
         <button class="login-button">CADASTRAR-SE</button>
 
         <p class="register-text">
-            Já possui uma conta? <a href="#" class="register-link">Login</a>
+            Já possui uma conta? <a href="#" class="register-link" id="loginLink">Login</a>
         </p>
     </div>
+
+    <script>
+        document.getElementById('loginLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'login.html';
+        });
+        document.querySelector('.login-button').addEventListener('click', function() {
+            alert('Funcionalidade de cadastro será implementada aqui!');
+        });
+    </script>
 </body>
 </html>
