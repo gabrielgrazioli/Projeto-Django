@@ -1,6 +1,6 @@
 :root {
-    --fundo-principal: #DEFF92;
-    --azul-principal: #362DB4;
-    --branco: #FFFFFF;
-    --cinza-borda: #dfdfdf;
+    --background-color: #DEFF92;
+    --primary-color: #362DB4;
+    --input-bg-color: #fff;
+    --text-color: #333;
 }
