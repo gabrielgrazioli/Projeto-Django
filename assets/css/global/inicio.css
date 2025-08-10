@@ -70,10 +70,10 @@ body {
 }
 
 .profile-img, .profile-img-sidebar {
-    height: 40px; /* Altere para o tamanho desejado, mantendo altura e largura iguais */
+    height: 40px;
     width: 40px;
-    border-radius: 50%; /* Transforma a imagem em um círculo */
-    object-fit: cover; /* Evita que a imagem fique distorcida */
+    border-radius: 50%;
+    object-fit: cover;
 }
 .main-content {
     grid-area: main;
@@ -151,7 +151,7 @@ body {
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Mantém 4 colunas com um tamanho mínimo fixo */
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
     background-color: #DEFF92;
@@ -180,9 +180,9 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: column; /* Alinha os itens em coluna (um em cada linha) */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 10px;
 }
@@ -239,8 +239,8 @@ body {
 .profile-info {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza tudo horizontalmente */
-    text-align: center;  /* Garante alinhamento do texto */
+    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
