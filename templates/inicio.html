@@ -236,8 +236,8 @@
     document.addEventListener('DOMContentLoaded', function () {
         // Script para o filtro
         var filterButton = document.querySelector('.filter-button');
-        var searchButton = document.querySelector('.search-button'); // Botão da lupa
-        var searchInput = document.querySelector('.search-bar-container input'); // Campo de busca
+        var searchButton = document.querySelector('.search-button');
+        var searchInput = document.querySelector('.search-bar-container input');
         var genderFilter = document.getElementById('genero-filtro');
         var stateFilter = document.getElementById('estado-filtro');
         var bookCardLinks = document.querySelectorAll('.book-card-link');
@@ -276,19 +276,16 @@
             });
         }
 
-        // Evento de clique no botão "FILTRAR"
         filterButton.addEventListener('click', function (e) {
             e.preventDefault();
             applyFilters();
         });
 
-        // Evento de clique no botão da lupa
         searchButton.addEventListener('click', function (e) {
             e.preventDefault();
             applyFilters();
         });
 
-        // Evento de tecla no campo de busca para o Enter
         searchInput.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 e.preventDefault();
